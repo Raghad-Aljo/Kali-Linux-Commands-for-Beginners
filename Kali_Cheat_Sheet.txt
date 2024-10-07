@@ -1,0 +1,173 @@
+Kail-linux Commands for Beginners
+su - Username
+
+this to switch account
+sudo useradd -m -s name
+
+add a new user + create directory + set shell
+sudo passwd
+
+add the password
+sudo usermod -aG groupname
+
+append an existing user to group
+touch filename
+
+create a new file name
+nano filename
+
+open the file in text editor
+cat > filename
+
+create a text file with content.
+cat filename
+
+view the text file.
+rm filename
+
+delete the file.
+mv filename new_file_location
+
+move the file to a new location.
+mv filename newfilename
+
+rename the file
+pwd
+
+where you are
+cd
+
+change directory
+ls
+
+list files
+cd /
+
+go to the root directory.
+cd ..
+
+move to the previous directory (one level up).
+cd -
+
+go to the previous working directory.
+cd directoryname
+
+enter into the directory.
+cd or cd ~
+
+navigate to the home directory.
+cd /
+
+move to the root directory.
+cd /dev/cpu
+
+navigate through multiple directories.
+ls -a
+
+list hidden files.
+ls -al
+
+list files with detailed information, including hidden files.
+ls -R
+
+show files in directories and subdirectories.
+mkdir
+
+create a directory
+rmdir
+
+remove a directory
+mv <directoryname> <newdirectoryname>
+
+rename the directory
+sudo mv filename ~/path
+
+move the file filename to the specified directory /path/to/location with superuser permissions.
+find
+
+search for a file
+which ProgramName
+
+displays the path of the executable for the given ProgramName.
+which -a ProgramName
+
+lists all paths where the executable for ProgramName is located.
+locate -b '\file'
+
+search for files where the basename is exactly "file".
+locate file
+
+search for all files containing the term "file" anywhere in the filename or directory path.
+locate filename
+
+locate files named filename by searching through the pre-built database.
+sudo updatedb
+
+run updatedb with superuser privileges.
+uname -a
+
+shows Kali version and other data
+whoami
+
+shows the username
+whatis
+
+tells you about the tool
+wget [options] [URL]
+
+download files from the specified URL
+ifconfig
+
+is used to display or configure network interfaces on Unix/Linux systems.
+route -n
+
+displays the kernel's routing table in a numeric format.
+df -h
+
+displays disk space usage and availability on file systems in a human-readable format (KB, MB, GB).
+htop
+
+shows real-time CPU and memory usage, allowing users to manage processes easily.
+cp
+
+copy
+history
+
+shows command history
+clear
+
+delete the command and restart a new line.
+stat -c '%A %a %n' filename
+
+formats output to show the file's permissions and name.
+ls -l filename
+
+shows the file and directory permissions.
+chmod [permissions] filename
+
+change file/directory permissions.
+chown user filename
+
+change the ownership of a file/directory.
+chown user:group filename
+
+change the user as well as the group for a file or directory.
+chgrp group_name filename
+
+change group-owner only.
+sort < filename
+
+sorts the contents of the specified file and displays the sorted output.
+sort <filename > sortedfile
+
+sorts the input and saves the sorted output to a new file.
+
+Sort Options:
+
+-r: reverses sorting.
+-n: sorts numerically.
+-f: performs case-insensitive sorting.
++x: ignores the first x fields when sorting.
+
+ls > fileName
+lists files in the current directory and saves the output to fileName.
